@@ -21,7 +21,7 @@ The suite is also integrated with **GitHub Actions** for CI/CD automation, gener
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/M-Wali-Ullah/ecommerce-regression-suite.git
+git clone https://github.com/M-Wali-Ullah/ecommerce-api-regression-suite.git
 cd ecommerce-regression-suite
 ```
 
@@ -32,7 +32,7 @@ npm install
 
 ### 3. Folder structure
 ```
-ecommerce-regression-suite/
+ecommerce-api-regression-suite/
  ┣━ postman/
  ┃   ┣━ ecommerce_collection.json        # Postman collection
  ┃   ┗━ staging_environment.json         # Postman environment
