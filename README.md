@@ -8,7 +8,7 @@ The suite is also integrated with **GitHub Actions** for CI/CD automation, gener
 
 ## 🚀 Features
 
-- ✅ User registration and login tests  
+- ✅ User registration and login tests
 - ✅ Product listing and details verification  
 - ✅ Cart creation and retrieval  
 - ✅ Order-related endpoints testing  
@@ -17,20 +17,26 @@ The suite is also integrated with **GitHub Actions** for CI/CD automation, gener
 
 ---
 
-## 📦 Project Setup
+## 📦 Project ScreenShots
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/M-Wali-Ullah/ecommerce-api-regression-suite.git
-cd ecommerce-regression-suite
-```
+<img width="1861" height="828" alt="image" src="https://github.com/user-attachments/assets/0b5b380a-10a1-4c32-a89c-1b15f6a74bcf" />
+<img width="1919" height="973" alt="image" src="https://github.com/user-attachments/assets/6cad7278-7b7d-47fd-a618-25a6c796c95c" />
+<img width="1918" height="962" alt="image" src="https://github.com/user-attachments/assets/34080dcc-fc46-48e8-81df-858668ccc24a" />
+<img width="1912" height="961" alt="image" src="https://github.com/user-attachments/assets/cb85a3e8-3e65-4eb1-a65b-e97f9405cc8b" />
+<img width="1919" height="972" alt="image" src="https://github.com/user-attachments/assets/f041c87e-837f-48ab-ac37-4560b43d62c6" />
 
-### 2. Install dependencies
-```bash
-npm install
-```
+---
 
-### 3. Folder structure
+## 📄 Report Generation
+
+- HTML reports are generated automatically via **Newman + htmlextra**  
+- In GitHub Actions, reports are uploaded as **artifacts** and can be downloaded for review
+<img width="1145" height="748" alt="image" src="https://github.com/user-attachments/assets/24387ba4-433e-42fa-b9a5-6079d21af92a" />
+<img width="1101" height="514" alt="image" src="https://github.com/user-attachments/assets/7d8c3d7e-ca39-4dbe-b615-1c86d9139611" />
+
+---
+
+## 📦 Project Folder structure
 ```
 ecommerce-api-regression-suite/
  ┣━ postman/
@@ -43,56 +49,6 @@ ecommerce-api-regression-suite/
      ┗━ workflows/
          ┗━ api-tests.yml                # GitHub Actions workflow
 ```
-
-## 🧪 Run Tests Locally
-
-You can run the Postman collection locally using **npm scripts**:
-
-```bash
-npm test
-```
-
-- Reports will be generated at `reports/ecommerce-report.html`  
-- Open the HTML file in a browser to view detailed test results
-
----
-
-## ⚙️ GitHub Actions CI/CD
-
-The workflow is defined in `.github/workflows/api-tests.yml` and automatically:
-
-1. Installs Node.js and dependencies  
-2. Ensures `reports/` folder exists  
-3. Runs Newman tests with HTML report generation  
-4. Uploads `ecommerce-report.html` as an artifact  
-
-The workflow triggers on:
-
-- `push` to `main`  
-- Pull requests targeting `main`
-
----
-
-## 🔧 Environment Variables
-
-The Postman environment `staging_environment.json` contains:
-
-| Variable | Description |
-|----------|-------------|
-| `baseUrl` | Base URL of the API (`https://fakestoreapi.com`) |
-| `token`   | Stores auth token after login |
-| `userId`  | Stores user ID after registration/login |
-| `productId` | Stores product ID for cart operations |
-
----
-
-## 📄 Report Generation
-
-- HTML reports are generated automatically via **Newman + htmlextra**  
-- In GitHub Actions, reports are uploaded as **artifacts** and can be downloaded for review
-
----
-
 ## 💻 References
 
 - [Postman](https://www.postman.com/)  
